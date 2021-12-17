@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+
+.App {
+  padding: 1em;
+}
+
+h1 {
+  font-family: 'Playfair Display SC';
+  text-align: center;
+  text-size-adjust: 64px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+
+header {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+img {
+  object-fit: scale-down;
+}
+
+html {
+  font-family: 'helvetica neue', sans-serif;
+  color: black;
+  text-align: center;
+}
+
+thead th, tfoot th {
+  font-family: 'Rock Salt';
+  color: black;
+  text-align: center;
+}
+
+th {
+  letter-spacing: 2px;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  text-align: center;
+}
+
+td {
+  letter-spacing: 1px;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+tr:nth-child(odd) {
+  background-color: #fff0c7;
+  color: black;
+}
+
+tbody:nth-child(even) {
+  background-color: white;
+  color: black;
+}
+
+tbody:nth-child(odd) {
+  background-color: #fff0c7;
+  color: black;
+}
+
+/* table */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  overflow:hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  color: black;
+  text-align: center;
+}
+
+.content_td p {
+  max-width: 100%;
+  max-height: 100px;
+  overflow-y: auto;
+  text-overflow: ellipsis;
+  color: black;
+  text-align: center;
+}
+
+td,th{
+  width: 10%;
+  text-align: center;
+}
+
+td:nth-child(4), th:nth-child(4){
+  width:30%
+}
+
+td:nth-child(5), th:nth-child(5){
+  width:30%;
+}
