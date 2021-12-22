@@ -5,7 +5,7 @@ function RecipeCreate({ recipes, setRecipes}) {
   const [type, setType] = useState("Text");
   const initialFormState = {name: '', cuisine: '', photo: '', ingredients: '', preparation: ''};
   
-  const [formData, setFormData] = useState(initialFormState)
+  const [formData, setFormData] = useState({...initialFormState})
   
    function handleChange(event){
     setFormData({
@@ -32,6 +32,7 @@ function RecipeCreate({ recipes, setRecipes}) {
                 onChange={handleChange}
                 value={formData.name}
                 placeholder= "Name"
+                required={true}
              />
             </td>
             <td>
@@ -42,6 +43,7 @@ function RecipeCreate({ recipes, setRecipes}) {
                 onChange={handleChange}
                 value={formData.cuisine}
                 placeholder= "Cuisine"
+                required={true}
              />
             </td>
             <td>
@@ -52,6 +54,7 @@ function RecipeCreate({ recipes, setRecipes}) {
                 onChange={handleChange}
                 value={formData.photo} 
                 placeholder= "URL"
+                required={true}
               />
             </td>
             <td>
@@ -62,6 +65,7 @@ function RecipeCreate({ recipes, setRecipes}) {
                 onChange={handleChange}
                 value={formData.ingredients}
                 placeholder= "Ingredients"
+                required={true}
               />
             </td>
             <td>
@@ -72,10 +76,11 @@ function RecipeCreate({ recipes, setRecipes}) {
                 onChange={handleChange}
                 value={formData.preparation} 
                 placeholder= "Preparation"
+                required={true}
               />
             </td>
             <td>
-              <button type="submit" onClick={handleCreate}>Create</button>
+              <button type="submit">Create</button>
             </td>
           </tr>
         </tbody>
